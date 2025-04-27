@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio & Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="container center-text">
+        <h1>Portofolio</h1>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#about">Tentang</a></li>
+            <li><a href="#projects">Proyek</a></li>
+            <li><a href="#hobi">Hobi</a></li>
+            <li><a href="#contact">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <section id="about" class="container center-text">
+        <h2>Tentang Saya</h2>
+        <img src="img/1.svg" alt="Foto Profil" width="150" height="150" class="profile-pic">
+        <p class="highlight">Saya adalah seorang mahasiswa aktif di program studi Sistem Informasi dengan semangat tinggi dalam mengeksplorasi dunia teknologi dan kreativitas visual.</p>
+    </section>
+
+    <section id="projects" class="container">
+        <h2 class="center-text">Proyek/Karya</h2>
+        <div class="project-list">
+            <div class="box-model-example">
+                <strong>UI/UX Database Superadmin toko buah</strong>
+                <img src="img/pr1 (1).png" alt="Website Toko Online">
+                <p class="highlight">Platform e-commerce sederhana untuk UMKM toko buah segar dan buah potong.</p>
+            </div>
+            <div class="box-model-border">
+                <strong>UI/UX Aplikasi pertanian "MEKARNESIA"</strong>
+                <img src="img/pr1 (2).png" alt="Aplikasi Pertanian">
+                <p class="highlight">Platform e-commerce sederhana untuk petani/pekebun, baik pemula maupun profesional.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2 class="center-text">Galeri Sertifikat</h2>
+        <div class="gallery">
+          <img src="img/Pijar_Mahir-Berkarir_di_bidang_Data_Analytics-tiwis863gmail.com (1)_page-0001.jpg" alt="Galeri 1">
+          <img src="img/Septiani Dwi Pratiwi - E-Certificate SC Excel MySkill Agustus 2023_page-0001.jpg" alt="Galeri 2">
+          <img src="img/SEPTIANI DWI PRATIWI - E-Certificate SC UIUX Fundamental MySkill Agustus 2023_page-0001.jpg" alt="Galeri 3">
+          <img src="img/septiani-dwi-pratiwi-certificate-attendance-sefc_page-0001.jpg" alt="Galeri 4">
+        </div>
+      </section>
+      
+
+    <section id="hobi" class="container">
+        <h2 class="center-text">Hobi</h2>
+        <article class="highlight">
+            <h3>Ilustrasi Digital</h3>
+            <p>Saya menggambar ilustrasi digital menggunakan software desain seperti Infinite design. Ini menjadi sarana saya mengekspresikan ide dan emosi secara visual.</p>
+        </article>
+        <article class="highlight">
+            <h3>Bergerak</h3>
+            <p>Di sela kesibukan, saya menyempatkan waktu untuk berolahraga seperti jogging tipis-tipis, bahkan kalau ada yang mengajak mendaki saya juga "GAS". Aktivitas ini membantu saya tetap bersemangat dan menjaga fokus dalam menjalani kegiatan sehari-hari.</p>
+        </article>
+    </section>
+
+    <section id="multimedia" class="container">
+        <h2 class="center-text">Multimedia</h2>
+        <div class="media-wrapper">
+            <video controls>
+                <source src="img/3.mp4" type="video/mp4">
+                Browser Anda tidak mendukung tag video.
+            </video>
+            <audio controls>
+                <source src="img/2.mp3" type="audio/mp3">
+                Browser Anda tidak mendukung tag audio.
+            </audio>
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <h2 class="center-text">Hubungi Saya</h2>
+        <form>
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required placeholder="Masukkan nama Anda">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Masukkan email Anda">
+
+            <label for="phone">Nomor Telepon:</label>
+            <input type="tel" id="phone" name="phone" required placeholder="Masukkan nomor telepon Anda">
+
+            <label for="message">Pesan:</label>
+            <textarea id="message" name="message" rows="4" required placeholder="Tulis pesan Anda di sini..."></textarea>
+
+            <button type="submit">Kirim</button>
+            
+        </form>
+        <div id="guestList" class="guestbook-list"></div>
+    </section>
+
+    <section id="hubungi" class="container">
+        <h2 class="center-text">Buku Tamu</h2>
+    
+        <form id="form-tamu" class="center-text">
+            <input type="text" id="nama" placeholder="Masukkan nama Anda" required>
+            <button type="submit">Kirim</button>
+        </form>
+    
+        <h3 class="center-text" style="margin-top: 30px;">Daftar Tamu:</h3> <!-- Judul daftar tamu -->
+        <div id="daftar-tamu" class="guestbook-list"></div> <!-- List tamu masuk sini -->
+    </section>
+    
+    
+    <footer class="center-text">
+        <p>Septiani Dwi Pratiwi - 3022310037 - UISI</p>
+    </footer>
+
+    <script src="tamu.js"></script>
+
+
+</body>
+</html>
