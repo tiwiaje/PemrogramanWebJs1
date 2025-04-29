@@ -1,6 +1,21 @@
 document.addEventListener("DOMContentLoaded", function () {
+
     const form = document.getElementById("form-tamu");
     const daftarTamu = document.getElementById("daftar-tamu");
+    const inputCari = document.getElementById("pencarian-tamu"); // pencarian //
+    inputCari.addEventListener("input", function () {
+    const keyword = inputCari.value.toLowerCase();
+    const semuaTamu = daftarTamu.querySelectorAll(".box-model-example");
+
+    semuaTamu.forEach(function (tamu) {
+        const nama = tamu.querySelector(".nama-tamu").textContent.toLowerCase();
+        if (nama.includes(keyword)) {
+            tamu.style.display = "flex";
+        } else {
+            tamu.style.display = "none";
+        }
+    });
+});
 
     form.addEventListener("submit", function (e) {
         e.preventDefault();
